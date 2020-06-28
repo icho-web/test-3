@@ -1,0 +1,10 @@
+form.message__form(action="index.html" method="get")
+  h3.message__form-header SEND US MESSAGE
+  label.message__desc(for="") Full Name
+  input.message__input.message__input--name(type="text" name="name" placeholder="Your Name")
+  label.message__desc(for="") Email
+  input.message__input.message__input--mail(type="email" name="mail" placeholder="Your Email" required)
+  p.message__desc Message
+  textarea.message__textarea(name="", cols="30", rows="10" placeholder="Your Message" required)
+  button.message__button Submit
+  button(type='button').message__close

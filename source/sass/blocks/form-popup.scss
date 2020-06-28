@@ -1,0 +1,25 @@
+.form-popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  display: none;
+
+  transform: translate(-50%, -50%);
+
+  form {
+    width: 300px;
+  }
+}
+
+.form-popup__open {
+  display: flex;
+}
+
+@media ($tablet) {
+  .form-popup {
+    form {
+      width: 540px;
+    }
+  }
+}

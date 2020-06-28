@@ -1,0 +1,32 @@
+.footer {
+  background-color: $blue;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__wrapper {
+  width: 93vw;
+
+  background-color: $footer-blue;
+  border-radius: 0px 200px 0px 0px;
+}
+
+.footer__contact {
+  background-color: transparent;
+}
+
+@media ($mobile) {
+  .footer__wrapper {
+    border-radius: 0 100px 0 0;
+  }
+}
+
+@media ($desktop) {
+  .footer__wrapper {
+    border-radius: 0px 200px 0px 0px;
+  }
+}

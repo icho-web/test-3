@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="css/style.min.css")
+  body
+    div(style='display: none')
+      include ../build/img/sprite.svg
+    header.header.header__contact
+      include modules/header
+    main
+      section.contact
+        .contact__header
+          h2.contact__h2 Contact Us
+          p.contact__header-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      section.message
+        .container
+          .message__wrapper
+            .message__contacts
+              img.message__img(src="img/contactUs.png", alt="")
+              .message__text-wrapper
+                h3.message__h3 ADDRESS
+                p.message__text.message__text--padding Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.
+              .message__text-wrapper
+                h3.message__h3 PHONE
+                a.message__text.message__text--tel(href="tel:+6281273134321") +62-812-7313-4321
+                a.message__text.message__text--tel(href="tel:+628170001234") +62-817-000-1234
+              .message__text-wrapper
+                h3.message__h3 ONLINE SERVICE
+                a.message__text.message__text--site(href="https://dribbble.com/afrianska") www.afrianska.com
+                a.message__text.message__text--mail(href="mailto:hello.afrian@gmail.com") hello.afrian@gmail.com
+            include modules/form
+          iframe.message__map(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6660.14357616833!2d-75.69215110327742!3d45.424553702109314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1593182886082!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+    footer.footer.footer__contact
+      include modules/footer

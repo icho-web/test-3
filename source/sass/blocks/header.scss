@@ -1,0 +1,46 @@
+.header {
+  .container {
+    position: relative;
+    padding: 0;
+  }
+}
+
+.header__wrapper {
+  position: absolute;
+
+  display: flex;
+  width: 100%;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__burger {
+  align-self: start;
+  padding-top: 8px;
+
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media ($mobile) {
+  .header__wrapper {
+    padding: 40px 5% 20px 5%;
+  }
+}
+
+@media ($desktop) {
+  .header__wrapper {
+    padding: 40px 5.9% 20px 6.1%;
+  }
+}

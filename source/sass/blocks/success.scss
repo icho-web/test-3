@@ -1,0 +1,32 @@
+.success {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba($color: black, $alpha: 0.5);
+}
+
+.success__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+
+  background-color: $dark-blue;
+  border-radius: 30px;
+}
+
+.success__text {
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  text-transform: uppercase;
+}

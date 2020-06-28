@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gilroy';
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  font-size: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media ($mobile) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+@media ($tablet) {
+  .container {
+    padding: 0 10%;
+  }
+}
+
+@media ($desktop) {
+  .container {
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 0 15.5%;
+  }
+}
+
+@media ($layout) {
+  .container {
+    margin: 0 auto;
+    width: 1366px;
+    padding: 0 212px;
+  }
+}

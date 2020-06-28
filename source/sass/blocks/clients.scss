@@ -1,0 +1,152 @@
+.clients {
+  background-color: $blue;
+  border-radius: 200px 0px 0px 0px;
+
+  .container {
+    padding-top: 64px;
+    padding-bottom: 120px;
+  }
+}
+
+.clients__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 78px;
+}
+
+.clients__table {
+  overflow: hidden;
+  border: 2px solid $blue;
+  border-collapse: collapse;
+}
+
+.clients__th {
+  width: 16%;
+  height: 132px;
+
+  font-size: 20px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  border: 1px solid #FFFFFF;
+  color: $white;
+}
+
+.clients__tr--2 {
+  .clients__th {
+    vertical-align: top;
+    padding-top: 38px;
+  }
+}
+
+.clients__th--link {
+  padding-left: 4px;
+  background-color: rgba($color: $dark-blue, $alpha: 0.2);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color: $dark-blue, $alpha: 0.5);
+  }
+  
+  &:active {
+    background-color: rgba($color: $dark-blue, $alpha: 0.3);
+  }
+}
+
+.clients__h2 {
+  @include h2($white);
+
+  margin-right: 10.1%;
+  width: 226px;
+}
+
+.clients__text {
+  @include text($white, 0.6);
+  width: 55%;
+  margin-top: 5px;
+}
+
+@media ($mobile) {
+  .clients {
+    border-radius: 100px 0 0 0;
+    
+    .container {
+      padding-bottom: 60px;
+    }
+  }
+
+  .clients__wrapper {
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .clients__h2 {
+    margin-right: 0;
+
+    width: auto;
+  }
+
+  .clients__text {
+    width: auto;
+  }
+
+  .clients__th {
+    height: 70px;
+
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .clients__tr--2 {
+    .clients__th {
+      padding-top: 8px;
+    }
+  }
+}
+
+@media ($desktop) {
+  .clients {
+    border-radius: 200px 0px 0px 0px;
+  
+    .container {
+      padding-bottom: 120px;
+    }
+  }
+
+  .clients__wrapper {
+    flex-direction: row;
+    justify-content: unset;
+    align-items: left;
+  }
+
+  .clients__h2 {
+    margin-right: 10.1%;
+    width: 226px;
+
+    text-align: left;
+  }
+
+  .clients__text {
+    width: 55%;
+
+    text-align: left;
+  }
+
+  .clients__th {
+    width: 16%;
+    height: 132px;
+  
+    font-size: 20px;
+    line-height: 46px;
+  }
+
+  .clients__tr--2 {
+    .clients__th {
+      vertical-align: top;
+      padding-top: 38px;
+    }
+  }
+}

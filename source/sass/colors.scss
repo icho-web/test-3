@@ -1,0 +1,35 @@
+@mixin text ($font-color, $opacity) {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  
+  color: rgba($color: $font-color, $alpha: $opacity);
+}
+
+@mixin h2 ($color) {
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+
+  color: $color;
+}
+
+@mixin h3 ($color) {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+
+  color: $color;
+}
+
+$dark-blue: #1F3F68;
+$footer-blue: #316099;
+$blue: #5A98D0;
+$blue-border: #356EAD;
+$white: #ffffff;
+
+$mobile: 'min-width: 320px';
+$tablet: 'min-width: 768px';
+$desktop: 'min-width: 1024px';
+$layout: 'min-width: 1366px'

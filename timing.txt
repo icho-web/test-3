@@ -1,0 +1,5 @@
+1 page - 7 hours
+2 page - 2 hours
+popup - 10 min
+validation - 1 hour
+ajax - 2 hour
