@@ -14,7 +14,7 @@
     "gulp-webp": "^4.0.1",
     "jquery": "^3.5.1",
     "posthtml-include": "^1.4.0",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "swiper": "^5.3.8"
   },
   "devDependencies": {
